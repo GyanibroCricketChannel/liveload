@@ -1,8 +1,10 @@
 
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TG_@WatchAddaLive</title>
+    <title>TG_@Gyani_Bro</title>
     <style>
         /* General Page Styling */
         body {
@@ -19,21 +21,24 @@
             text-align: center;
         }
 
-        /* Bingewav Sports Logo Section */
-        .logo-container {
-            background: #000; /* Black background for the logo */
-            padding: 15px;
+        /* Glowing Effect for Message */
+        .loading-message {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            padding: 10px 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+            animation: glow 1.5s infinite alternate;
         }
 
-        .logo-container img {
-            width: 220px; /* Adjust the logo size */
-            height: auto;
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00; }
+            100% { box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00, 0 0 35px #ffcc00; }
         }
 
         /* Video Player Styling */
@@ -44,147 +49,69 @@
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
             border-radius: 15px;
             overflow: hidden;
-            background: #000; /* Black background behind the video for better focus */
+            background: #000;
         }
 
         .player-container iframe {
             border-radius: 15px;
+            width: 100%;
+            height: 100%;
         }
 
-        /* Stream Issue Section */
-        .stream-issue {
+        /* Join Telegram Button */
+        .join-telegram-container {
             margin-top: 20px;
-            padding: 15px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 16px;
-            color: #fff;
-            width: fit-content;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .stream-issue a {
-            color: #00c1ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .stream-issue a:hover {
-            text-decoration: underline;
-        }
-
-        /* Credits Section */
-        .credits {
-            margin-top: 25px;
-            padding: 15px 25px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
+        .join-telegram-btn {
+            padding: 10px 20px;
             font-size: 16px;
-            color: #fff;
-            width: fit-content;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            display: inline-block;
-        }
-
-        .credits-title {
-            font-size: 18px;
             font-weight: bold;
-            margin-bottom: 8px;
+            color: white;
+            background-color: #008fd6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .credits a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .credits a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .logo-container img {
-                width: 180px;
-            }
-
-            .credits, .stream-issue {
-                font-size: 14px;
-                padding: 10px 20px;
-            }
-
-            .credits-title {
-                font-size: 16px;
-            }
+        .join-telegram-btn:hover {
+            background-color: #006bb3;
         }
     </style>
-<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"></head>
+</head>
 <body>
+
+    <!-- Loading Message -->
+    <div class="loading-message">Share The Links With Your Friends</div>
+
+    <!-- Video Player Section -->
+    <div class="player-container">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" 
+            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="true" scrolling="no" 
+            src="https://gyanibrocricketchannel.github.io/mpdplayer?Watch=https://psl.bigbaat.app/out/v1/0ef369b90c7b4025b76621e46ee5fb70/index.m3u8t/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
     </div>
 
-   <!-- Video Player Section -->
-<div class="player-container">
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="true" scrolling="no" src="https://crichd-embet.tiiny.io/embet.php?id=starhindi" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    <!-- Join Telegram Button -->
+    <div class="join-telegram-container">
+        <button class="join-telegram-btn" onclick="window.open('https://t.me/+dMtdPBTHz1Y1NzFl', '_blank')">Join Telegram Channel</button>
     </div>
-</div>
-<!-- Join Telegram Button -->
-<div class="join-telegram-container">
-    <button class="join-telegram-btn" onclick="window.open('https://t.me/WatchAddaLive', '_blank')">Join Telegram Channel</button>
-</div>
-
-<style>
-    .join-telegram-container {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .join-telegram-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        background-color: #008fd6;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .join-telegram-btn:hover {
-        background-color: #006bb3;
-    }
-</style>
-
 <script>
- // Close popup function
-    function closePopup() {
-      const popup = document.getElementById('popup');
-      popup.style.display = 'none';
-    }
-  </script>
-
-  <div id="popup" style="display: none;">
-    <div class="popup-content">
-      <h2>Support Us!</h2>
-      <p>Join Our Telegram Channel @WatchAddaLive</p>
-      <button class="join-btn" onclick="window.open('https://t.me/WatchAddaLive', '_blank')">Join Now</button>
-      <button class="close-btn" onclick="closePopup()">Already Joined</button>
-    </div>
-  </div>
-
+// alert('Join Our Telegram For Latest update')
+         if (confirm("Join Our Telegram Channel @GyaniBro") == true) {
+         window.open("
+https://t.me/+dMtdPBTHz1Y1NzFl", '_blank');
+     }
+</script>
 <script>
-        // Show the alert
-        if (confirm("Join Our Telegram Channel @WatchAddaLive")) {
-            // Redirect to the Telegram channel if 'OK' is clicked
-            window.location.href = "https://t.me/WatchAddaLive";
-        } else {
-            // Close the alert if 'Cancel' is clicked (do nothing)
-        }
+// alert('Join Our Telegram For Latest update')
+         if (confirm("Join Our Telegram Channel @Gyani_Bro") == true) {
+         window.open("https://t.me/+dMtdPBTHz1Y1NzFl", '_blank');
+     }
 </script>
 
-
-</body></html>
+</body>
+</html>
